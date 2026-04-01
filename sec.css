@@ -346,8 +346,6 @@ body {
      box-shadow: 2px 2px 5px purple;
      display: inline-block;
      animation: slideIn1 linear 0.8s;
-     animation-fill-mode: forwards;
-     animation-iteration-count: 1;
      animation-timeline: view(); 
      animation-range: entry 0% cover 30%;
 }
