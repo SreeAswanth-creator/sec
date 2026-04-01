@@ -679,6 +679,10 @@ li {
      .navbar-menu {
           margin-left: 10%;
           font-size: 12px;
+
+     }
+     .navbar{
+          width: auto;
      }
 
      .overimg {
