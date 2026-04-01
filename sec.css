@@ -345,13 +345,13 @@ body {
      flex-wrap: wrap;
      box-shadow: 2px 2px 5px purple;
      display: inline-block;
-     animation: slideIn linear 0.8s;
+     animation: slideIn1 linear 0.8s;
      animation-timeline: view(); 
      animation-range: entry 0% cover 30%;
 }
 @keyframes slideIn1 {
   from {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
   to {
     transform: translateX(0);
