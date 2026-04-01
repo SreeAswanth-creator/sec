@@ -1,5 +1,6 @@
 body {
      overflow-x: hidden;
+     width: 100%;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -8,6 +9,7 @@ body {
      padding: 0;
      box-sizing: border-box;
      scroll-behavior: smooth;
+
      
 }
 
