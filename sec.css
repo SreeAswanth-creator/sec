@@ -362,10 +362,9 @@ body {
      list-style: none;
 }
 
-.ser-bar-h2,
-li {
+.ser-bar-h2,li {
      margin: 10px;
-     justify-content: flex-start;
+     
      
 }
 
