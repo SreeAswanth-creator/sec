@@ -2,6 +2,17 @@ body {
      overflow-x: hidden;
      width: 100%;
      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+     from {
+          opacity: 0;
+     }
+
+     to {
+          opacity: 1;
+     }
 }
 
 * {
@@ -10,20 +21,23 @@ body {
      box-sizing: border-box;
      scroll-behavior: smooth;
 
-     
+
 }
-.logo1{
+
+.logo1 {
      width: 100%;
      height: auto;
      display: none;
      padding-top: 50px;
      animation: logo1 0.8s ease forwards;
-    
+
 }
+
 @keyframes logo1 {
      from {
           opacity: 0;
      }
+
      to {
           opacity: 1;
      }
@@ -34,12 +48,12 @@ body {
      background-color: black;
      width: 100%;
      display: flex;
-     
+
      color: whitesmoke;
      position: fixed;
      z-index: 10;
      opacity: 0.9;
-     
+
 }
 
 
@@ -104,15 +118,18 @@ body {
      opacity: 0.8;
      animation: over1 0.8s ease forwards;
 }
+
 @keyframes over1 {
-    from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
+     from {
+          transform: translateX(-100%);
+     }
+
+     to {
+          transform: translateX(0);
+     }
 }
-.logo{
+
+.logo {
      height: auto;
      width: 100%;
      opacity: 1;
@@ -153,7 +170,7 @@ body {
 }
 
 .apply :hover {
-     
+
      color: aquamarine;
      transition: 0.2s ease-in;
      border-radius: 5px;
@@ -304,7 +321,7 @@ body {
 }
 
 .services {
-     height: auto ;
+     height: auto;
      width: 100%;
      background-color: black;
      gap: 50px;
@@ -315,14 +332,14 @@ body {
 }
 
 .services-2 {
-     height: auto ;
+     height: auto;
      width: 100%;
      background-color: black;
      gap: 50px;
      padding-top: 10px;
      padding-bottom: 50px;
      display: flex;
-     
+
 }
 
 .ser-bar {
@@ -333,18 +350,21 @@ body {
      flex-wrap: wrap;
      box-shadow: 2px 2px 5px purple;
      animation: slideIn 0.8s ease forwards;
-     animation-timeline: view(); 
+     animation-timeline: view();
      animation-range: entry 0% cover 30%;
-    
+
 }
+
 @keyframes slideIn {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0);
-  }
+     from {
+          transform: translateX(-100%);
+     }
+
+     to {
+          transform: translateX(0);
+     }
 }
+
 .ser-bar:hover {
      box-shadow: 2px 4px 10px purple;
 }
@@ -362,26 +382,29 @@ body {
      box-shadow: 2px 2px 5px purple;
      display: inline-block;
      animation: slideIn1 linear 0.8s;
-     animation-timeline: view(); 
+     animation-timeline: view();
      animation-range: entry 0% cover 30%;
 }
+
 @keyframes slideIn1 {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+     from {
+          opacity: 0;
+     }
+
+     to {
+          opacity: 1;
+     }
 }
+
 .ser-bar-h2 {
      font-size: 20px;
      list-style: none;
 }
 
-.ser-bar-h2,li {
+.ser-bar-h2 li {
      margin: 10px;
-     
-     
+
+
 }
 
 .ser-para-div {
@@ -474,8 +497,8 @@ body {
      cursor: pointer;
      text-decoration: none;
      transition: 0.2s ease-out;
-     
-     
+
+
 }
 
 .help:hover {
@@ -506,7 +529,7 @@ body {
      margin: auto;
      transform: scale(1);
      transition: 0.5s ease-out;
-     
+
 
 }
 
@@ -526,7 +549,7 @@ body {
      border: 2px solid white;
      border-radius: 0px 0px 8px 8px;
      display: inline-block;
-     transform: rotate(90deg ) scale(1);
+     transform: rotate(90deg) scale(1);
      position: fixed;
      top: 35%;
      right: -52px;
@@ -534,6 +557,7 @@ body {
      transition: 0.3s ease-out;
 
 }
+
 .apply-2:hover {
      background-color: rgba(255, 255, 255, 0.064);
      backdrop-filter: blur(5px);
@@ -541,10 +565,161 @@ body {
      border: yellow solid 2px;
      transition: 0.3s ease-in;
 }
+
 .dep {
      text-align: center;
 }
 
+
+.con-head {
+     font-size: 30px;
+     display: inline-block;
+}
+
+.contact1 {
+     height: auto;
+     background-color: yellow;
+     color: black;
+     text-align: center;
+}
+.contact {
+     height:auto;
+     width: 100%;
+     background-color: yellow;
+     color: darkblue;
+     display: flex;
+}
+
+
+.contact-img {
+     width: 30%;
+     height: 200px;
+     margin-left: auto;
+     margin-right: auto;
+     cursor: pointer;
+     border: 1px solid black;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     margin-top: 20px;
+    
+     
+}
+
+.contact-img-sub {
+     width: 70%;
+     height: auto;
+     margin-left: 10px;
+     cursor: pointer;
+     display: flex;
+     flex-direction: column;
+    
+}
+.a{
+     text-align: center;
+     text-decoration: none;
+}
+.sub-img{
+     width: 50%;
+     height: auto;
+     margin: auto;
+     cursor: pointer;
+     justify-content: center;
+}
+.sub-img1{
+     width: 50%;
+     height: auto;
+     margin: auto;
+     cursor: pointer;
+     justify-content: center;
+}
+.contact-2{
+     background-color: yellow;
+     color: black;
+     height: auto;
+     width: 50%;
+     margin-top: 0px;
+
+
+}
+.contact-add{
+     list-style: none;
+     padding: 10px;
+}
+.contact-add p{
+     padding-top: 20px;
+}
+.con2-head{
+     font-size: 30px;
+     padding-top: 20px;
+     padding-left: 15%;
+     padding-bottom: 20px;
+     text-align: center;
+}
+.rec-img-div{
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     
+
+
+}
+.rec-img-div1{
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     height: auto;
+     flex-basis: 20%;
+}
+.contact-rec{
+     display: block;
+     padding: 10px;
+     width: 80%;
+     margin: auto;
+     text-align: center;
+}
+.contact-add-div{
+     padding: 0%;
+}
+.contact-3{
+     background-color: yellow;
+     color: black;
+     height: auto;
+     width: 50%;
+     margin-top: 0px;
+     display: flex;
+     justify-content: center;
+}
+.contact-4{
+     display: flex;
+     background-color: yellow;
+     padding-top: 50px;
+}
+.rec-img{
+     width: 40%;
+     height: auto;
+     border-radius: 10px;
+     box-shadow: 2px 2px 3px black;
+     margin: auto;
+     margin-top: 20px;
+     cursor: pointer;
+     display: flex;
+     flex-direction: row;
+}
+.footer{
+     height: 50px;
+     background: linear-gradient(to right, yellow, black);
+     color: white;
+     text-align: center;
+     justify-content: center;
+     padding-top: 15px;
+}
+.rsa{
+     width: 55px;
+     height: 35px;
+     margin-left: 5px;
+     vertical-align: middle;
+}
 @media screen and (max-width: 1230px) {
      .navbar-menu {
           margin-left: auto;
@@ -687,7 +862,18 @@ body {
           width: 90px;
           height: 90px;
      }
-
+     .contact-add{
+          font-size: 12px;
+     }
+     .contact-rec{
+          font-size: 20px;
+     }
+     .con2-head{
+          font-size: 20px;
+     }
+     .contact-4{
+          gap: 20px;
+     }
 }
 
 @media screen and (max-width: 601px) {
@@ -696,7 +882,8 @@ body {
           font-size: 12px;
 
      }
-     .navbar{
+
+     .navbar {
           width: 100%;
      }
 
@@ -724,6 +911,7 @@ body {
           font-size: 10px;
           margin-left: auto;
           margin-top: 100px;
+          display: none;
 
      }
 
@@ -769,37 +957,75 @@ body {
           z-index: 10;
           padding-left: 10px;
 
-          
+
      }
-     .logo{
+
+     .logo {
           display: none;
      }
-     .logo1{
+
+     .logo1 {
           display: block;
           height: auto;
           width: 100%;
      }
-     .college-photo{
+
+     .college-photo {
           padding-top: 0px;
      }
-     .h1{
+
+     .h1 {
           font-size: 25px;
      }
+
      .slide-q {
           margin-bottom: 20px;
      }
-     .services .services-2{
+
+     .services .services-2 {
           gap: 20px;
      }
+
      .about-sub-img {
           width: 80%;
      }
+
      .about-sub-img:hover {
           transform: scale(1.1);
           width: 80%;
           z-index: 2;
      }
-
-
+     .contact{
+          flex-direction: column;
+     }
+     .contact-img {
+          width: 80%;
+          height: auto;
+     }
+     .contact-4{
+          flex-direction: column;
+     }
+     .contact-2{
+          width: 100%;
+     }
+     .contact-3{
+          width: 100%;
+     }
+.contact-add{
+          font-size: 15px;
+     }
+     .open-img {
+          position: fixed;
+          top: 75%;
+          left: 82%;
+          width: 75px;
+          height: 75px;
+     }
+     .footer p {
+          font-size: 10px;
+     }
+     .rsa {
+          width: 40px;
+          height: 25px;
+     }
 }
-
