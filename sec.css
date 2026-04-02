@@ -12,6 +12,22 @@ body {
 
      
 }
+.logo1{
+     width: 100%;
+     height: auto;
+     display: none;
+     padding-top: 50px;
+     animation: logo1 0.8s ease forwards;
+    
+}
+@keyframes logo1 {
+     from {
+          opacity: 0;
+     }
+     to {
+          opacity: 1;
+     }
+}
 
 .navbar {
      height: 50px;
@@ -676,7 +692,7 @@ body {
 
 @media screen and (max-width: 601px) {
      .navbar-menu {
-          margin-left: 10%;
+          margin-left: auto;
           font-size: 12px;
 
      }
@@ -707,12 +723,13 @@ body {
      .apply {
           font-size: 10px;
           margin-left: auto;
+          margin-top: 100px;
 
      }
 
      .slider {
           height: 250px;
-          width: 50%;
+          width: 60%;
      }
 
      .slide img {
@@ -720,7 +737,7 @@ body {
      }
 
      .ser-bar-h2 {
-          font-size: 12px;
+          font-size: 10px;
      }
 
      .open-img {
@@ -749,7 +766,40 @@ body {
 
      .apply-2 {
           font-size: 25px;
+          z-index: 10;
+          padding-left: 10px;
+
           
      }
+     .logo{
+          display: none;
+     }
+     .logo1{
+          display: block;
+          height: auto;
+          width: 100%;
+     }
+     .college-photo{
+          padding-top: 0px;
+     }
+     .h1{
+          font-size: 25px;
+     }
+     .slide-q {
+          margin-bottom: 20px;
+     }
+     .services .services-2{
+          gap: 20px;
+     }
+     .about-sub-img {
+          width: 80%;
+     }
+     .about-sub-img:hover {
+          transform: scale(1.1);
+          width: 80%;
+          z-index: 2;
+     }
+
+
 }
 
