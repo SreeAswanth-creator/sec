@@ -1039,4 +1039,17 @@ body {
           width: 100%;
           gap: none;
      }
+     .services{
+          flex-direction: column;
+          width: 100%;
+          gap: none;
+     }
+     .ser-bar ,.ser-bar-2 {
+          width: 90%;
+          text-align: center;
+          margin: 5px auto;
+     }
+     .ser-para{
+          margin-top: 10px;
+     }
 }
