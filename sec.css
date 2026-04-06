@@ -1048,6 +1048,10 @@ body {
           width: 90%;
           text-align: center;
           margin: 5px auto;
+
+     }
+     .ser-bar-h2 {
+          font-size: 15px;
      }
      .ser-para{
           margin-top: 10px;
