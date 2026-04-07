@@ -1,0 +1,194 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>application</title>
+    <link rel="icon" href="imgsec/college1.webp">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: linear-gradient(to right, darkorchid, darkviolet);
+        overflow-x: hidden;
+        animation: lode1 2s forwards;
+    }
+    @keyframes lode1 {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+        
+    }
+
+    .apply {
+        width: 60%;
+        height: fit-content;
+        background-color: black;
+        align-items: center;
+        color: white;
+        position: absolute;
+        left: 20%;
+        right: 20%;
+        top: 20%;
+        bottom: 20%;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px;
+        animation: glow 5s infinite;
+        z-index: 3;
+
+
+
+    }
+
+    @keyframes glow {
+        0% {
+            box-shadow: 0 2px 10px rgb(255, 0, 0);
+
+        }
+
+        25% {
+            box-shadow: 0 2px 10px rgb(0, 255, 0);
+        }
+
+        50% {
+            box-shadow: 0 2px 10px rgb(0, 0, 255);
+        }
+
+        75% {
+            box-shadow: 0 2px 10px rgb(255, 255, 0);
+        }
+
+        100% {
+            box-shadow: 0 2px 10px rgb(255, 0, 0);
+        }
+    }
+
+    li {
+        list-style: none;
+        
+    }
+
+    h3 {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    ul {
+        margin-top: 19px;
+    }
+
+    button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: darkviolet;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: whitesmoke;
+        color: black;
+    }
+
+    .bg-circle {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: rgba(0, 255, 255, 0.3);
+        border-radius: 50%;
+        top: 50px;
+        left: -100px;
+        filter: blur(20px);
+        z-index: 1;
+        animation: moveCircle 8s linear infinite alternate;
+    }
+
+    .bg1-circle {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: rgba(0, 255, 255, 0.3);
+        border-radius: 50%;
+        top: 50px;
+        right: -100px;
+        filter: blur(20px);
+        z-index: 1;
+        animation: moveCircle1 8s linear infinite alternate;
+    }
+
+    @keyframes moveCircle1 {
+        0% {
+            transform: translateX(0vw) translateY(0vh);
+        }
+
+        100% {
+            transform: translateX(-100vw) translateY(30vh);
+        }
+    }
+
+    @keyframes moveCircle {
+        0% {
+            transform: translateX(0vw) translateY(0vh);
+        }
+
+        100% {
+            transform: translateX(100vw) translateY(30vh);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .apply {
+            width: 60%;
+        }
+
+        li {
+            margin-left: 0;
+        }
+
+    }
+</style>
+
+<body>
+    <center>
+        <div class="apply">
+            <h1 style="text-align: center; padding-top: 1%;">Application form</h1>
+            <li>
+                <ul>
+                    <h3>Name:</h3><input type="text" placeholder="Enter your name">
+                </ul>
+                <ul>
+                    <h3>Age:</h3><input type="number" placeholder="Enter your age">
+                </ul>
+                <ul>
+                    <h3>Email:</h3><input type="email" placeholder="Enter your email">
+                </ul>
+                <ul>
+                    <h3>Phone:</h3><input type="tel" placeholder="Enter your phone number">
+                </ul>
+                <ul>
+                    <h3>Cutoff:</h3><input type="number" placeholder="Expected cutoff">
+                </ul>
+                <ul>
+                    <h3>Total:</h3><input type="number" placeholder="Expected total marks">
+                </ul>
+
+            </li>
+            <a href="apply.html"><center><button>Submit</button></center></a>
+        </div>
+    </center>
+    <div class="bg-circle"></div>
+    <div class="bg1-circle"></div>
+</body>
+
+</html>
