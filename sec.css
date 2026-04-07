@@ -431,6 +431,9 @@ body {
      padding-top: 50px;
      padding-bottom: 50px;
 }
+.about-para{
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 .vision {
 
@@ -1055,5 +1058,8 @@ body {
      }
      .ser-para{
           margin-top: 10px;
+     }
+     .con2-head{
+          justify-content: center;
      }
 }
